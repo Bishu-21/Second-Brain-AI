@@ -18,7 +18,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/health")
+@RequestMapping({"/api/health", "/health", "/"})
 public class HealthController {
 
     private static final Logger logger = LoggerFactory.getLogger(HealthController.class);
